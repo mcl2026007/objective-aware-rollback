@@ -1,0 +1,29 @@
+{
+  "stale_objective_commit_rate": {
+    "direction": "lower is better"
+  },
+  "legitimate_action_completion_rate": {
+    "direction": "higher is better"
+  },
+  "false_block_rate": {
+    "direction": "lower is better"
+  },
+  "duplicate_effect_commits": {
+    "direction": "lower is better (report attempts too)"
+  },
+  "incorrect_undo_claims": {
+    "direction": "lower is better"
+  },
+  "ledger_mismatches": {
+    "direction": "lower is better"
+  },
+  "prior_effect_losses": {
+    "direction": "lower is better"
+  },
+  "policy_errors": {
+    "direction": "lower is better"
+  },
+  "simulator_steps": {
+    "direction": "lower is generally better; simulator-only descriptive measure"
+  }
+}

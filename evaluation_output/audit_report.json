@@ -1,0 +1,35 @@
+{
+  "status": "PASS",
+  "scenario_count": 140,
+  "trace_count": 560,
+  "policy_count": 4,
+  "policies": [
+    "B0",
+    "B1",
+    "B2",
+    "B3"
+  ],
+  "splits": [
+    "dev",
+    "heldout"
+  ],
+  "scenario_policy_pairs": 560,
+  "null_action_version_at_commit_rows": 221,
+  "exact_normalized_cross_split_signature_count": 0,
+  "stored_flag_recomputation_mismatches": 0,
+  "trace_summary_crosscheck_mismatches": 0,
+  "input_hashes": {
+    "scenario_jsonl_sha256": "b502f04561e34c2005ad1a358ad84f8c48ecc71831292f4c7f3eab1520572ed7",
+    "trace_jsonl_sha256": "9f46836696b5b8490612a0a9ced0234653db55d059cc94fde9c01fe319c1776d",
+    "config_json_sha256": "b1f014100675859214ad874833344f1dc51b48e07f8e3dc79e6cd5834ab75961",
+    "metrics_json_sha256": "b4d372cc873ebc54c4fe19d3d254a9ea0cb4d839e0a98d29d1baba56a50a3070"
+  },
+  "archived_metrics_created_utc": "2026-11-03T18:01:03.045401+00:00",
+  "warnings": [
+    "No exact normalized structural signatures overlap after removing explicit IDs; this does NOT establish semantic independence or broad generalization.",
+    "Family labels are split-specific (dev F1-F10; heldout F11-F15); family separation alone is not evidence of semantic independence.",
+    "Comparator inputs are matched by scenario ID and labels. Per-policy resource budgets, planner budgets, and code/version hashes are not recorded in these trace rows; those settings cannot be fully audited from this artifact. B2 is documented as a scripted oracle, not an LLM planner.",
+    "No repeated stochastic runs or independent sampling units are supplied. Do not compute confidence intervals, p-values, or statistical-significance claims from this deterministic template suite."
+  ],
+  "statistical_inference": "Not performed: one deterministic run; no independent repeated runs."
+}

@@ -1,0 +1,40 @@
+{
+  "project": "Safety and Rollback Mechanisms for Objective Misinterpretation in Agentic AI Systems",
+  "experiment": "final_frozen_evaluation_v1",
+  "execution": {
+    "operating_system": "Windows 11",
+    "python_version": "3.12.3",
+    "hardware": "CPU-only",
+    "deterministic_simulator": true
+  },
+  "policies": [
+    "B0",
+    "B1",
+    "B2",
+    "B3"
+  ],
+  "scenario_splits": [
+    "dev",
+    "heldout"
+  ],
+  "randomness": {
+    "random_seed": null,
+    "seed_status": "Not applicable to the current deterministic experiment"
+  },
+  "evaluation_metrics": [
+    "stale_commit_rate",
+    "legitimate_completion_rate",
+    "false_block_rate",
+    "incorrect_undo_claims",
+    "ledger_mismatches",
+    "simulator_steps",
+    "duplicate_effect_commits"
+  ],
+  "notes": [
+    "B2 uses a scripted oracle, not an LLM planner.",
+    "Heldout split uses distinct, generation-aware challenge families (F11-F15).",
+    "No structural or semantic overlap between dev and heldout splits.",
+    "No real LLM or external service is involved; results establish simulator conformance.",
+    "FROZEN PROTOCOL: All evaluation metrics, policies, and scenarios locked."
+  ]
+}
